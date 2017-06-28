@@ -9,7 +9,9 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 
-import org.apache.tomcat.dbcp.dbcp.BasicDataSource;
+//inserida a biblioteca BasicDataSource em novo endereÃ§o
+import org.apache.tomcat.dbcp.dbcp2.BasicDataSource; 
+
 import org.hibernate.SessionFactory;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -21,7 +23,7 @@ import curso.angular.hibernate.HibernateUtil;
 import curso.angular.listener.ContextLoaderListenerCaixakiUtils;
 
 /**
- * Intercepta todas as requisições, faz commit e rollback 
+ * Intercepta todas as requisiï¿½ï¿½es, faz commit e rollback 
  * @author alex
  */
 @WebFilter(filterName = "conexaoFilter")

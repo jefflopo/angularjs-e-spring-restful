@@ -1,5 +1,5 @@
-/banco
-/curso
-/db
+/banco/
+/curso/
+/db/
 /hibernate.cfg.xml
-/relatorios
+/relatorios/
