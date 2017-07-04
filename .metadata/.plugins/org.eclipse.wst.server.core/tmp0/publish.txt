@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Mon Jul 03 11:37:26 BRT 2017
+#Tue Jul 04 09:06:06 BRT 2017
 org.eclipse.jst.jee.server\:Projeto_angularjs_spring=C\:\\Users\\b2681739\\Desktop\\AngularJS_Spring\\apache-tomcat-9.0\\wtpwebapps\\Projeto_angularjs_spring
 org.eclipse.jst.jee.server\:angularjs_spring_mvc=C\:\\Users\\b2681739\\Desktop\\AngularJS_Spring\\apache-tomcat-9.0\\wtpwebapps\\angularjs_spring_mvc

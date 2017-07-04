@@ -1,0 +1,15 @@
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>AngularJS com Spring MVC</title>
+<script type="text/javascript" src="resources/script/angular.min.js"></script>
+</head>
+<body ng-app ng-init="meuNome='Jefflopo'">
+	<input type="text" ng-model="meuNome">
+	
+	<br/>
+	
+	<h1> Olá, {{ meuNome }} </h1>
+	
+</body>
+</html>
