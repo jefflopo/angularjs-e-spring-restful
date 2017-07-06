@@ -1,25 +1,19 @@
 <html ng-app="loja">
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="UTF-8">
 <title>AngularJS com Spring MVC</title>
-<script type="text/javascript" src="resources/script/angular.min.js"></script>
 
+<script type="text/javascript" src="resources/script/angular.min.js"></script>
+<script type="text/javascript" src="resources/script/angular-route.js"></script>
 <script type="text/javascript" src="resources/script/firstController.js"></script>
 
 </head>
-<body ng-controller="firstController as user" id="corpo">
-	<input type="text" ng-model="user.meuNome">
-	<br/>
-	<br>
-	<input type="text" ng-model="user.meuSobreNome">
-	<br/>
+<body id="corpo">
 	
-	<h1> Olá, {{ user.meuNome }} </h1>
-	<h1> Sobrenome: {{ user.meuSobreNome }} </h1>
-	
-	<a href="#" ng-click="addContador();">Add</a>
-	<hr>
-	<h1>Contador: {{ contador }}</h1>
+	<h1>Rota Deep Linking Exemplo</h1>
+	<div ng-view>
+		
+	</div>
 	
 </body>
 </html>
