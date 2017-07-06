@@ -1,0 +1,35 @@
+<html ng-app="loja">
+<head>
+<meta charset="UTF-8">
+<title>AngularJS com Spring MVC</title>
+<script type="text/javascript" src="resources/script/angular.min.js"></script>
+
+<script type="text/javascript" src="resources/script/firstController.js"></script>
+
+</head>
+<body ng-controller="firstController as user" id="corpo">
+	<input type="text" ng-model="user.meuNome">
+	<br/>
+	<br>
+	<input type="text" ng-model="user.meuSobreNome">
+	<br/>
+	
+	<h1> Olá, {{ user.meuNome }} </h1>
+	<h1> Sobrenome: {{ user.meuSobreNome }} </h1>
+	
+	<!-- ng-click="contador = contador + 1" ng-init="contador=0"  -->
+	
+	<a href="#" ng-click="addContador();">Add</a>
+	<hr>
+	<h1>Contador: {{ contador }}</h1>
+	
+	<hr>
+	
+	<h1>LOOP</h1>
+	<ul>
+		<li ng-repeat="nome in pessoas">{{nome}}</li>
+	</ul>
+	<h2>Quantidade de elementos array pessoas = {{ user.pessoas.length }} </h2>
+	
+</body>
+</html>
