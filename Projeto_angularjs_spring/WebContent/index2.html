@@ -1,0 +1,50 @@
+<html ng-app="loja">
+<head>
+<meta charset="UTF-8">
+<title>AngularJS com Spring MVC</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script type="text/javascript" src="resources/script/firstController_.js"></script>
+<script type="text/javascript" src="resources/script/angular-route.js"></script>
+</head>
+<body id="corpo" ng-controller="firstController">
+	<h1>Expressão 1</h1>
+	<p>{{ 55 + 5}}</p>
+	
+	<h1>Expressão 2</h1>
+	<div ng-init="myCol='yellow'">
+		<input style="background-color: {{myCol}}" ng-model="myCol"
+		value="{{myCol}}"/>
+	</div>
+	
+	<h1>Expressão 3</h1>
+	<div ng-init="valor=2; cota=5">
+		<p>Total em dolar: {{ valor / cota }}</p>
+	</div>
+	
+	<h1>Expressão 4</h1>
+	<div ng-init="quantity=1; cost=5">
+		<p>Total in dollar: <span ng-bind="quantity * cost"></span></p>
+	</div>
+	
+	<h1>Expressão 5</h1>
+	<div ng-init="firstName='Jeff'; lastName='Lopo'">
+		<p style="font-size: 50px">Meu nome é {{ firstName + " " + lastName }}</p>
+	</div>
+	
+	<div ng-init="firstName='Jeff'; lastName='Moreira'">
+		<p>Meu nome é: <span ng-bind="firstName + ' ' + lastName"></span></p>
+	</div>
+	
+	
+	<h1>AngularJS Objects</h1>
+	<div ng-init="person={firstName:'jeff', lastName: 'Lopo'}">
+		<p>Nome é: {{person.firstName}}</p>
+	</div>
+	
+	<h1>AngularJS Arrays</h1>
+	<div ng-init="points=[1,23,15,2,40]">
+		<p>Resultado: [2] = {{points[2] + 5}}</p>
+	</div>
+	
+</body>
+</html>
