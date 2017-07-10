@@ -1,0 +1,72 @@
+<html ng-app="loja">
+<head>
+<meta charset="UTF-8">
+<title>AngularJS com Spring MVC</title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+<script type="text/javascript" src="resources/script/firstController_3.js"></script>
+<script type="text/javascript" src="resources/script/angular-route.js"></script>
+</head>
+<body id="corpo">
+	
+	<div ng-controller="personCtrl">
+		<p>O nome é {{lastName | uppercase}}</p>
+		<p>O nome é {{firstName | lowercase}}</p>
+	</div>
+	
+	<div ng-controller="namesCtrl">
+		<p>Loop de Objetos:</p>
+		<ul>
+			<li ng-repeat="x in names | orderBy: 'country'">
+				{{x.name + ' , ' + x.country}}
+			</li>
+		</ul>
+	</div>
+	
+	<div ng-controller="costCtrl">
+		<h1>Preço: {{price | currency}}</h1>
+	</div>
+	
+	<div ng-controller="namesCtrl2">
+		<ul>
+			<li ng-repeat="x in names | filter: 'i'">{{x}}</li>
+		</ul>
+	</div>
+	
+	<div ng-controller="namesCtrl3">
+		<p>
+			<input type="text" ng-model="test">
+		</p>
+		
+		<ul>
+			<li ng-repeat="x in names | filter: test">{{x}}</li>
+		</ul>
+	</div>
+	
+	<p>Clica no Cabeçalho e Ordena</p>
+	<div ng-controller="namesCtrl4">
+		<table border="1" width="100%">
+			<tr>
+				<th ng-click="orderByMe('name')">Name</th>
+				<th ng-click="orderByMe('country')">Country</th>
+			</tr>
+			<tr ng-repeat="x in names | orderBy: myOrderBy">
+				<th>{{x.name}}</th>
+				<th>{{x.country}}</th>
+			</tr>
+		
+		</table>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>
